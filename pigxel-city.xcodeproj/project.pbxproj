@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		680956F2209911EC00035679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680956F0209911EC00035679 /* Main.storyboard */; };
 		680956F4209911F000035679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680956F3209911F000035679 /* Assets.xcassets */; };
 		680956F7209911F000035679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680956F5209911F000035679 /* LaunchScreen.storyboard */; };
+		D02C8813CCF62154AB93FCE4 /* Pods_pigxel_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB0E4D07651338D6B29F1AB /* Pods_pigxel_city.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		680956F3209911F000035679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680956F6209911F000035679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680956F8209911F000035679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AB0E4D07651338D6B29F1AB /* Pods_pigxel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pigxel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8163BCCB57A19EACE22CF295 /* Pods-pigxel-city.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pigxel-city.release.xcconfig"; path = "Pods/Target Support Files/Pods-pigxel-city/Pods-pigxel-city.release.xcconfig"; sourceTree = "<group>"; };
+		D81371775B9736984808695E /* Pods-pigxel-city.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pigxel-city.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pigxel-city/Pods-pigxel-city.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02C8813CCF62154AB93FCE4 /* Pods_pigxel_city.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0177219E6CBC3F05502F874A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D81371775B9736984808695E /* Pods-pigxel-city.debug.xcconfig */,
+				8163BCCB57A19EACE22CF295 /* Pods-pigxel-city.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		680956E0209911EC00035679 = {
 			isa = PBXGroup;
 			children = (
 				680956EB209911EC00035679 /* pigxel-city */,
 				680956EA209911EC00035679 /* Products */,
+				0177219E6CBC3F05502F874A /* Pods */,
+				E43D21D681FEB72D8834307D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +112,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		E43D21D681FEB72D8834307D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AB0E4D07651338D6B29F1AB /* Pods_pigxel_city.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 680956FB209911F000035679 /* Build configuration list for PBXNativeTarget "pigxel-city" */;
 			buildPhases = (
+				B4C1C3F5E24101623B2B2C2F /* [CP] Check Pods Manifest.lock */,
 				680956E5209911EC00035679 /* Sources */,
 				680956E6209911EC00035679 /* Frameworks */,
 				680956E7209911EC00035679 /* Resources */,
+				BB16C9E3B49B86619C7DF2F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,11 +154,12 @@
 				TargetAttributes = {
 					680956E8209911EC00035679 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 680956E4209911EC00035679 /* Build configuration list for PBXProject "pigxel-city" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -161,6 +188,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4C1C3F5E24101623B2B2C2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pigxel-city-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB16C9E3B49B86619C7DF2F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pigxel-city/Pods-pigxel-city-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pigxel-city/Pods-pigxel-city-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		680956E5209911EC00035679 /* Sources */ = {
@@ -302,23 +370,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		680956FC209911F000035679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D81371775B9736984808695E /* Pods-pigxel-city.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9X329BRT6C;
 				INFOPLIST_FILE = "pigxel-city/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FannyFarm.pigxel-city";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -328,15 +393,13 @@
 		};
 		680956FD209911F000035679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8163BCCB57A19EACE22CF295 /* Pods-pigxel-city.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9X329BRT6C;
 				INFOPLIST_FILE = "pigxel-city/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "FannyFarm.pigxel-city";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
