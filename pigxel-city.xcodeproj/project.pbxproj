@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		680956ED209911EC00035679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680956EC209911EC00035679 /* AppDelegate.swift */; };
-		680956EF209911EC00035679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680956EE209911EC00035679 /* ViewController.swift */; };
+		680956EF209911EC00035679 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680956EE209911EC00035679 /* MapVC.swift */; };
 		680956F2209911EC00035679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680956F0209911EC00035679 /* Main.storyboard */; };
 		680956F4209911F000035679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680956F3209911F000035679 /* Assets.xcassets */; };
 		680956F7209911F000035679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680956F5209911F000035679 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		680956E9209911EC00035679 /* pigxel-city.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pigxel-city.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680956EC209911EC00035679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		680956EE209911EC00035679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		680956EE209911EC00035679 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		680956F1209911EC00035679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		680956F3209911F000035679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680956F6209911F000035679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,46 @@
 		680956EB209911EC00035679 /* pigxel-city */ = {
 			isa = PBXGroup;
 			children = (
+				680957022099171A00035679 /* Utilities */,
+				68095700209916E100035679 /* Extentions */,
+				680956FF2099169900035679 /* View */,
+				680956FE2099167000035679 /* Controller */,
 				680956EC209911EC00035679 /* AppDelegate.swift */,
-				680956EE209911EC00035679 /* ViewController.swift */,
 				680956F0209911EC00035679 /* Main.storyboard */,
 				680956F3209911F000035679 /* Assets.xcassets */,
 				680956F5209911F000035679 /* LaunchScreen.storyboard */,
 				680956F8209911F000035679 /* Info.plist */,
 			);
 			path = "pigxel-city";
+			sourceTree = "<group>";
+		};
+		680956FE2099167000035679 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				680956EE209911EC00035679 /* MapVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		680956FF2099169900035679 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68095700209916E100035679 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		680957022099171A00035679 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				680956EF209911EC00035679 /* ViewController.swift in Sources */,
+				680956EF209911EC00035679 /* MapVC.swift in Sources */,
 				680956ED209911EC00035679 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
