@@ -132,6 +132,7 @@
 				680956E6209911EC00035679 /* Frameworks */,
 				680956E7209911EC00035679 /* Resources */,
 				BB16C9E3B49B86619C7DF2F1 /* [CP] Embed Pods Frameworks */,
+				BFD0BA4A47DBEC393055BA84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +227,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pigxel-city/Pods-pigxel-city-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFD0BA4A47DBEC393055BA84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pigxel-city/Pods-pigxel-city-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
