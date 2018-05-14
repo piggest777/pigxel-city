@@ -13,6 +13,7 @@
 		680956F4209911F000035679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680956F3209911F000035679 /* Assets.xcassets */; };
 		680956F7209911F000035679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680956F5209911F000035679 /* LaunchScreen.storyboard */; };
 		68CB197E20A9040200FFE9BA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB197D20A9040200FFE9BA /* PhotoCell.swift */; };
+		68CB198020A90B2C00FFE9BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB197F20A90B2C00FFE9BA /* Constants.swift */; };
 		68FDF12E209FC8340096D4B4 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FDF12D209FC8340096D4B4 /* DroppablePin.swift */; };
 		D02C8813CCF62154AB93FCE4 /* Pods_pigxel_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB0E4D07651338D6B29F1AB /* Pods_pigxel_city.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		680956F6209911F000035679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680956F8209911F000035679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68CB197D20A9040200FFE9BA /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		68CB197F20A90B2C00FFE9BA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		68FDF12D209FC8340096D4B4 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		7AB0E4D07651338D6B29F1AB /* Pods_pigxel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pigxel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8163BCCB57A19EACE22CF295 /* Pods-pigxel-city.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pigxel-city.release.xcconfig"; path = "Pods/Target Support Files/Pods-pigxel-city/Pods-pigxel-city.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		680957022099171A00035679 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				68CB197F20A90B2C00FFE9BA /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68CB198020A90B2C00FFE9BA /* Constants.swift in Sources */,
 				68CB197E20A9040200FFE9BA /* PhotoCell.swift in Sources */,
 				680956EF209911EC00035679 /* MapVC.swift in Sources */,
 				68FDF12E209FC8340096D4B4 /* DroppablePin.swift in Sources */,
