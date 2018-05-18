@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/svinson/Desktop/Udemy/pigxel-city/pigxel-city/pigxel-city/Controller/PopVC.swift">
+   </FileRef>
+   <FileRef
       location = "group:pigxel-city.xcodeproj">
    </FileRef>
    <FileRef
