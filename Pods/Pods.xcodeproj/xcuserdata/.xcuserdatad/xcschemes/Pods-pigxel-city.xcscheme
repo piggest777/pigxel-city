@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AD7A3218EFF9E5C1C8D114D4599C80AA'
-               BlueprintName = 'Pods-pigxel-city'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-pigxel-city.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD7A3218EFF9E5C1C8D114D4599C80AA"
+               BlueprintName = "Pods-pigxel-city"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "Pods-pigxel-city.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

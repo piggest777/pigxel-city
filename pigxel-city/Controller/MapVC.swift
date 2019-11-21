@@ -91,7 +91,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     func addSpinner () {
         spinner = UIActivityIndicatorView()
         spinner?.center = CGPoint(x: (screenSize.width/2) - ((spinner?.frame.width)!/2), y: 150)
-        spinner?.activityIndicatorViewStyle = .whiteLarge
+        spinner?.style = .whiteLarge
         spinner?.color = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         spinner?.startAnimating()
         collectionView?.addSubview(spinner!)
@@ -133,7 +133,6 @@ extension MapVC: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil
-            
         }
         
         let pinAnnotation = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "droppablePin")
@@ -146,7 +145,7 @@ extension MapVC: MKMapViewDelegate {
     
     func centerMapOnUserLocation () {
         guard let coordinate = locationManager.location?.coordinate else {return}
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(coordinate, regionRadius * 2.0, regionRadius * 2.0)
+        let coordinateRegion = MKCoordinateRegion.init(center: coordinate, latitudinalMeters: regionRadius * 2.0, longitudinalMeters: regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
@@ -176,7 +175,7 @@ extension MapVC: MKMapViewDelegate {
         
         print(flickrUrl(forApiKey: apiKey, withAnnotation: annotation, andNumberOfPhotos: 40))
         
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(touchCoordinate, regionRadius * 2, regionRadius * 2)
+        let coordinateRegion = MKCoordinateRegion.init(center: touchCoordinate, latitudinalMeters: regionRadius * 2, longitudinalMeters: regionRadius * 2)
         mapView.setRegion(coordinateRegion, animated: true)
         
         получитьЮрл(forAnnotation: annotation) { (finished) in
@@ -303,11 +302,3 @@ extension MapVC: UIViewControllerPreviewingDelegate {
     
     
 }
-
-
-
-
-
-
-
-
